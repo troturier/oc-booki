@@ -21,6 +21,10 @@ A responsive landing page built with **HTML5** and **CSS3** only, based on the U
 - [Code Guidelines](#code-guidelines)
 - [Browser Compatibility](#browser-compatibility)
 
+## Github Repository
+
+The project's repository is available on [Github](https://github.com/troturier/oc-booki).
+
 ## Project Overview
 
 Booki is a travel booking interface allowing users to search for accommodations and activities by city. This iteration focuses exclusively on layout, styling, and responsiveness — the search and filtering features are **non-functional placeholders**, meant only to validate the visual design.
