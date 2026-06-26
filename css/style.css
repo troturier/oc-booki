@@ -9,9 +9,10 @@
 }
 
 :root {
-    --main-color      : #0065FC;
-    --main-bg-color   : #F2F2F2;
-    --filter-bg-color : #DEEBFF;
+    --main-color          : #0065FC;
+    --main-bg-color       : #F2F2F2;
+    --filter-bg-color     : #DEEBFF;
+    --filter-border-color : #D9D9D9;
 }
 
 .fa-solid {
@@ -196,6 +197,51 @@ a {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+/* Filters */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.filters {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : start;
+    align-items     : center;
+    flex-wrap       : wrap;
+    gap             : 15px;
+    margin-bottom   : 35px;
+}
+
+.filters-label {
+    font-weight : bold;
+    font-size   : 18px;
+}
+
+.filter {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+    align-items     : center;
+    gap             : 10px;
+    padding         : 14px 19px;
+    border-radius   : 25px;
+    cursor          : pointer;
+    border          : 2px solid var(--filter-border-color);
+}
+
+.filter:hover {
+    background-color : var(--filter-bg-color);
+}
+
+.filter-icon {
+    color     : var(--main-color);
+    font-size : 22px;
+}
+
+.filter-text {
+    font-weight : bold;
+    font-size   : 17px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
 /* Hebergements And Populaires */
 /* ------------------------------------------------------------------------------------------------------------------ */
 
@@ -217,6 +263,55 @@ a {
 
 .hebergements {
     width : 65%;
+}
+
+.hebergements-title {
+    margin-bottom : 30px;
+}
+
+.hebergements-cards {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    flex-wrap       : wrap;
+    gap             : 30px;
+    margin-bottom   : 30px;
+}
+
+.hebergements-card-link {
+    flex-grow : 0.3;
+}
+
+.hebergements-card-img {
+    height                  : 124px;
+    width                   : 100%;
+    object-fit              : cover;
+    border-top-left-radius  : 20px;
+    border-top-right-radius : 20px;
+    border-bottom           : 5px solid white;
+    box-sizing              : border-box;
+}
+
+.hebergements-card-content {
+    padding        : 4px 10px 7px 10px;
+    display        : flex;
+    flex-direction : column;
+    gap            : 8px;
+}
+
+.hebergements-card-txt {
+    display        : flex;
+    flex-direction : column;
+    gap            : 8px;
+}
+
+.hebergements-card-title, .hebergements-card-subtitle {
+    margin : 0;
+}
+
+.show-more {
+    font-weight : bold;
+    font-size   : 18px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
