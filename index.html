@@ -24,9 +24,9 @@
     <!-- =========================================================================================================== -->
     <!-- =========================================================================================================== -->
 
-    <header>
+    <header class="header">
         <img class="logo" src="images/logo/Booki@3x.png" alt="Logo Booki">
-        <nav>
+        <nav class="main-nav">
             <a href="#lodgings" class="nav-link">Hébergements</a>
             <a href="#activities" class="nav-link">Activités</a>
         </nav>
@@ -42,19 +42,26 @@
     <!-- =========================================================================================================== -->
 
     <main>
+        <form action="" class="search-field">
+            <div class="search-field-prepend"><i class="fa-solid fa-location-dot search-prepend-icon"></i></div>
+            <input id="search-field-input" type="text" class="search-field-input" value="Marseille, France">
+            <button class="search-submit-text">Rechercher</button>
+            <button class="search-submit-icon"><i class="fa-solid fa-magnifying-glass search-submit-icon-glyph"></i></button>
+        </form>
+
         <div class="hebergements-and-populaires">
-            <section id="lodgings" class="hebergements">
+            <section id="lodgings" class="hebergements info-panel">
 
             </section>
-            <section class="populaires">
+            <section class="populaires info-panel">
                 <div class="populaires-title">
                     <h2 class="section-title">Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                 </div>
                 <div class="populaires-cards">
-                    <a href="#">
+                    <a href="#" class="populaires-card-link">
                         <article class="card">
-                            <img src="./images/hebergements/emile-guillemot.jpg"
+                            <img class="card-img populaires-card-img" src="./images/hebergements/emile-guillemot.jpg"
                                  alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -72,9 +79,9 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="#" class="populaires-card-link">
                         <article class="card">
-                            <img src="./images/hebergements/aw-creative.jpg"
+                            <img class="card-img populaires-card-img" src="./images/hebergements/aw-creative.jpg"
                                  alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -92,9 +99,9 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="#" class="populaires-card-link">
                         <article class="card">
-                            <img src="./images/hebergements/febrian-zakaria2.jpg"
+                            <img class="card-img populaires-card-img" src="./images/hebergements/febrian-zakaria2.jpg"
                                  alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">

@@ -1,4 +1,9 @@
-/****** General ***********/
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/* GENERAL */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+
 * {
     font-family : 'Raleway', sans-serif;
 }
@@ -22,6 +27,65 @@ body {
     /* Some browsers seems to enforce a fixed margin on the <body> tag, this will ensure that it is removed */
     margin          : 0;
 }
+
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/* HEADER */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+
+.header {
+    margin-bottom   : 35px;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    flex-wrap       : wrap;
+}
+
+.logo {
+    height        : 19px;
+    margin-top    : 30px;
+    margin-bottom : 30px;
+}
+
+.main-nav {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : end;
+    gap             : 68px;
+}
+
+.nav-link {
+    padding-top : 14px;
+    border      : 2px solid transparent;
+}
+
+.nav-link:hover {
+    color            : var(--main-color);
+    border-top-color : var(--main-color);
+}
+
+.page-title, .page-subtitle {
+    width  : 100%;
+    margin : 0;
+}
+
+.page-title {
+    font-size     : 22px;
+    margin-bottom : 8px;
+    margin-top    : 30px;
+}
+
+.page-subtitle {
+    font-size   : 16px;
+    font-weight : normal;
+}
+
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/* MAIN */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
 
 .main-container {
     width      : 100%;
@@ -47,7 +111,7 @@ a {
     filter           : drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
+.card-img {
     object-fit : cover;
 }
 
@@ -63,25 +127,102 @@ a {
     color : var(--main-bg-color)
 }
 
-/****** Hebergements And Populaires ***********/
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Search */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.search-field {
+    border-radius : 15px;
+    display       : flex;
+    align-items   : center;
+    overflow-x    : visible;
+    overflow-y    : visible;
+    border        : 1px solid var(--main-bg-color);
+    width         : fit-content;
+    margin-bottom : 35px;
+    z-index       : 1;
+}
+
+.search-field-prepend {
+    background-color : var(--main-bg-color);
+    height           : 50px;
+    width            : 50px;
+    display          : flex;
+    align-items      : center;
+    justify-content  : center;
+    border-radius    : 15px 0 0 15px;
+}
+
+.search-prepend-icon {
+    color : black;
+}
+
+.search-field-input {
+    border      : none;
+    outline     : none;
+    padding     : 0 24px;
+    font-weight : bold;
+    font-size   : 18px;
+}
+
+.search-submit-icon, .search-submit-text {
+    background-color : var(--main-color);
+    border           : none;
+    outline          : none;
+    padding          : 0 16px;
+    cursor           : pointer;
+    height           : 50px;
+}
+
+.search-submit-icon {
+    width           : 50px;
+    display         : none;
+    align-items     : center;
+    justify-content : center;
+    border-radius   : 15px;
+    box-shadow      : 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    z-index         : 2;
+}
+
+.search-submit-icon-glyph {
+    color : white;
+}
+
+.search-submit-text {
+    color         : white;
+    font-weight   : bold;
+    border-radius : 0 15px 15px 0;
+    font-size     : 18px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Hebergements And Populaires */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
 .hebergements-and-populaires {
     display         : flex;
     justify-content : space-between;
 }
 
-.hebergements-and-populaires section {
+.info-panel {
     background-color : var(--main-bg-color);
     border-radius    : 20px;
     padding          : 30px;
     box-sizing       : border-box;
 }
 
-/****** Hebergements ***********/
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Hebergements */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
 .hebergements {
     width : 65%;
 }
 
-/****** Populaires ***********/
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Populaires */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
 .populaires {
     width : 32%;
 }
@@ -97,7 +238,7 @@ a {
     margin-top : 33px;
 }
 
-.populaires-cards img {
+.populaires-card-img {
     width                     : 33%;
     height                    : 136px;
     border-top-left-radius    : 20px;
@@ -128,65 +269,15 @@ a {
 
 /* ================================================================================================================== */
 /* ================================================================================================================== */
-/* HEADER */
-/* ================================================================================================================== */
-/* ================================================================================================================== */
-
-header {
-    margin-bottom   : 35px;
-    display         : flex;
-    flex-direction  : row;
-    justify-content : space-between;
-    flex-wrap       : wrap;
-
-    .logo {
-        height        : 19px;
-        margin-top    : 30px;
-        margin-bottom : 30px;
-    }
-
-    nav {
-        display         : flex;
-        flex-direction  : row;
-        justify-content : end;
-        gap             : 68px;
-
-        .nav-link {
-            padding-top : 14px;
-            border      : 2px solid transparent;
-        }
-
-        .nav-link:hover {
-            color            : var(--main-color);
-            border-top-color : var(--main-color);
-
-        }
-    }
-
-    .page-title, .page-subtitle {
-        width   : 100%;
-        margin  : 0;
-    }
-
-    .page-title {
-        font-size     : 22px;
-        margin-bottom : 8px;
-        margin-top    : 30px;
-    }
-
-    .page-subtitle {
-        font-size   : 16px;
-        font-weight : normal;
-    }
-}
-
-
-/* ================================================================================================================== */
+/* RESPONSIVE */
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /* ================================================================================================================== */
+/* ================================================================================================================== */
 
-/****** Media queries ***********/
+/* ------------------------------------------------------------------------------------------------------------------ */
 /* Medium devices (tablets, less/equal than 1024px) */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
 @media (max-width : 1024px) {
     .hebergements-and-populaires {
         flex-direction : column;
@@ -207,7 +298,7 @@ header {
         justify-content : space-between;
     }
 
-    .populaires-cards a {
+    .populaires-card-link {
         width : 30%;
     }
 
@@ -220,7 +311,10 @@ header {
     }
 }
 
+/* ------------------------------------------------------------------------------------------------------------------ */
 /* Small devices (phones, less than 768px) */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
 @media (max-width : 767.98px) {
     /* ... */
 }
