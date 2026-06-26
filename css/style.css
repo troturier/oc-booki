@@ -242,6 +242,38 @@ a {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+/* Results info */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.results-info {
+    display         : flex;
+    flex-direction  : row;
+    justify-content : start;
+    align-items     : center;
+    margin-bottom   : 35px;
+    gap             : 10px;
+}
+
+.results-info-icon-container {
+    border-radius   : 100%;
+    border          : 1px solid var(--filter-border-color);
+    height          : 24px;
+    width           : 24px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.results-info-icon {
+    font-size : 10px;
+    color     : var(--main-color);
+}
+
+.results-info-text {
+    font-size : 16px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
 /* Hebergements And Populaires */
 /* ------------------------------------------------------------------------------------------------------------------ */
 
