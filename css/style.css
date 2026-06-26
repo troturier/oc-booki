@@ -592,8 +592,7 @@ a {
     }
 
     .search-field-prepend,
-    .search-submit-icon
-    {
+    .search-submit-icon {
         min-width  : 50px;
         min-height : 50px;
     }
@@ -608,6 +607,7 @@ a {
 
     .search-field-input {
         max-width : calc(100% - 100px);
+        width     : 100%;
     }
 
     .filter {
